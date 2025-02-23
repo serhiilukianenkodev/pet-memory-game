@@ -1,46 +1,54 @@
-import { createRandomSet } from './js/createRandomSet';
+import { checkWin } from './js/checkWin';
+// import { createRandomSet } from './js/createRandomSet';
 import { refs } from './js/refs';
 import { renderCards } from './js/renderCards';
 
-// console.log(createRandomSet(16));
 let firstOpenedCard = null;
+let secondOpenedCard = null;
+const CARDS_AMOUNT = 12;
 
 refs.cards.addEventListener('click', onCardsClick);
-renderCards();
+renderCards(CARDS_AMOUNT);
 
-function onCardsClick(evt) {
-  if (evt.target === evt.currentTarget) return;
-  if (evt.target === firstOpenedCard) return;
-  if (evt.target.classList.contains('found')) return;
+function onCardsClick({ target, currentTarget }) {
+  if (target === currentTarget) return;
+  if (firstOpenedCard && secondOpenedCard) return;
+  if (target === firstOpenedCard) return;
+  if (target.classList.contains('found')) return;
 
-  const target = evt.target;
   showCard(target);
 
   if (!firstOpenedCard) {
     firstOpenedCard = target;
-    target.classList.add('shown');
     return;
   }
+  secondOpenedCard = target;
 
-  if (target.dataset.id === firstOpenedCard.dataset.id) {
-    makeCardFound(target);
+  if (secondOpenedCard.dataset.id === firstOpenedCard.dataset.id) {
+    makeCardFound(secondOpenedCard);
     makeCardFound(firstOpenedCard);
     firstOpenedCard = null;
+    secondOpenedCard = null;
 
-    console.log('bingo');
+    if (checkWin(refs.cards)) {
+      setTimeout(() => {
+        alert('You WIN');
+        renderCards(CARDS_AMOUNT);
+      }, 500);
+    }
     return;
   }
 
-  closeCard(target);
-  closeCard(firstOpenedCard);
-  firstOpenedCard = null;
-
-  //   console.log(target.dataset.id);
+  closeCards();
 }
 
-function closeCard(target) {
-  //   target.classList.remove('shown');
-  setInterval(() => target.classList.remove('shown'), 500);
+function closeCards() {
+  setTimeout(() => {
+    firstOpenedCard.classList.remove('shown');
+    secondOpenedCard.classList.remove('shown');
+    firstOpenedCard = null;
+    secondOpenedCard = null;
+  }, 500);
 }
 
 function showCard(target) {

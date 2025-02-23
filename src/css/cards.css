@@ -27,11 +27,11 @@
     height: 100%;
     background-color: #fff;
     opacity: 1;
-    transition: opacity 500ms ease-out 0s;
   }
 
   &.shown::before {
     opacity: 0;
+    transition: opacity 500ms ease-out 0s;
     /* display: none; */
   }
 

@@ -1,8 +1,8 @@
 import { createRandomSet } from './createRandomSet';
 import { refs } from './refs';
 
-export function renderCards() {
-  const cardSet = createRandomSet(12);
+export function renderCards(amount = 12) {
+  const cardSet = createRandomSet(amount);
   const markup = cardSet
     .map(item => `<div class="card" data-id=${item}>${item}</div>`)
     .join('');
