@@ -32,7 +32,7 @@ function onCardsClick({ target, currentTarget }) {
 
     if (checkWin(refs.cards)) {
       setTimeout(() => {
-        alert('You WIN');
+        alert('Оленка)))) You WIN');
         renderCards(CARDS_AMOUNT);
       }, 500);
     }
