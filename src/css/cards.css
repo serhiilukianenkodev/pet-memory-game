@@ -1,0 +1,21 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 400px;
+  height: 300px;
+  background-color: #2ef775;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+  background-color: #f7712d;
+  cursor: pointer;
+}
