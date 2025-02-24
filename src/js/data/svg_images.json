@@ -1,0 +1,122 @@
+[
+  {
+    "id": 25,
+    "name": "fruit_1",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍎</text>\n</svg>"
+  },
+  {
+    "id": 26,
+    "name": "fruit_2",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍊</text>\n</svg>"
+  },
+  {
+    "id": 27,
+    "name": "fruit_3",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍋</text>\n</svg>"
+  },
+  {
+    "id": 28,
+    "name": "fruit_4",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍌</text>\n</svg>"
+  },
+  {
+    "id": 29,
+    "name": "fruit_5",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍉</text>\n</svg>"
+  },
+  {
+    "id": 30,
+    "name": "fruit_6",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍇</text>\n</svg>"
+  },
+  {
+    "id": 31,
+    "name": "fruit_7",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍓</text>\n</svg>"
+  },
+  {
+    "id": 32,
+    "name": "fruit_8",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍒</text>\n</svg>"
+  },
+  {
+    "id": 33,
+    "name": "fruit_9",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍑</text>\n</svg>"
+  },
+  {
+    "id": 34,
+    "name": "fruit_10",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍍</text>\n</svg>"
+  },
+  {
+    "id": 35,
+    "name": "fruit_11",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🥭</text>\n</svg>"
+  },
+  {
+    "id": 36,
+    "name": "fruit_12",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🥥</text>\n</svg>"
+  },
+  {
+    "id": 37,
+    "name": "fruit_13",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🥝</text>\n</svg>"
+  },
+  {
+    "id": 38,
+    "name": "fruit_14",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍅</text>\n</svg>"
+  },
+  {
+    "id": 39,
+    "name": "fruit_15",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍈</text>\n</svg>"
+  },
+  {
+    "id": 40,
+    "name": "fruit_16",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍏</text>\n</svg>"
+  },
+  {
+    "id": 41,
+    "name": "fruit_17",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍐</text>\n</svg>"
+  },
+  {
+    "id": 42,
+    "name": "fruit_18",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍋</text>\n</svg>"
+  },
+  {
+    "id": 43,
+    "name": "fruit_19",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍇</text>\n</svg>"
+  },
+  {
+    "id": 44,
+    "name": "fruit_20",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍉</text>\n</svg>"
+  },
+  {
+    "id": 45,
+    "name": "fruit_21",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍓</text>\n</svg>"
+  },
+  {
+    "id": 46,
+    "name": "fruit_22",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍒</text>\n</svg>"
+  },
+  {
+    "id": 47,
+    "name": "fruit_23",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍑</text>\n</svg>"
+  },
+  {
+    "id": 48,
+    "name": "fruit_24",
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\">\n<text x=\"50\" y=\"55\" font-size=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\">🍍</text>\n</svg>"
+  }
+]

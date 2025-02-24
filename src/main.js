@@ -5,7 +5,7 @@ import { renderCards } from './js/renderCards';
 
 let firstOpenedCard = null;
 let secondOpenedCard = null;
-const CARDS_AMOUNT = 12;
+const CARDS_AMOUNT = 16;
 
 refs.cards.addEventListener('click', onCardsClick);
 renderCards(CARDS_AMOUNT);
@@ -32,7 +32,7 @@ function onCardsClick({ target, currentTarget }) {
 
     if (checkWin(refs.cards)) {
       setTimeout(() => {
-        alert('Оленка)))) You WIN');
+        alert('You WIN');
         renderCards(CARDS_AMOUNT);
       }, 500);
     }
