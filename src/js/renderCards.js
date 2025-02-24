@@ -18,6 +18,22 @@ const emoji = [
   '\u{1F989}',
   '\u{1FAB0}',
   '\u{1F42C}',
+  '\u{1FAB1}',
+  '\u{1FAB2}',
+  '\u{1FAB3}',
+  '\u{1FAB4}',
+  '\u{1FAB5}',
+  '\u{1FAB6}',
+  '\u{1FAB7}',
+  '\u{1FAB8}',
+  '\u{1FAB9}',
+  '\u{1FABA}',
+  '\u{1FABB}',
+  '\u{1FABC}',
+  '\u{1FABD}',
+  '\u{1FABE}',
+  '\u{1FABF}',
+  '\u{1FAC0}',
 ];
 // console.log(svgImages);
 // ${svgImages[item].svg}
