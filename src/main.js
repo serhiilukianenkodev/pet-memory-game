@@ -1,14 +1,31 @@
+import { Timer, TimerOptions, Time } from 'timer-node';
+
 import { checkWin } from './js/checkWin';
-// import { createRandomSet } from './js/createRandomSet';
 import { refs } from './js/refs';
 import { renderCards } from './js/renderCards';
 
 let firstOpenedCard = null;
 let secondOpenedCard = null;
 const CARDS_AMOUNT = 16;
+const timer = new Timer();
+let timerSetIntervatID = null;
 
 refs.cards.addEventListener('click', onCardsClick);
-renderCards(CARDS_AMOUNT);
+refs.startBtn.addEventListener('click', onStartBtnClick);
+
+function onStartBtnClick() {
+  renderCards(CARDS_AMOUNT);
+  if (timerSetIntervatID) {
+    clearInterval(timerSetIntervatID);
+    timer.stop();
+  }
+  timer.start();
+  timerSetIntervatID = setInterval(() => {
+    const min = String(timer.time().m).padStart(2, '0');
+    const sec = String(timer.time().s).padStart(2, '0');
+    refs.gameTimeField.textContent = `${min}:${sec}`;
+  }, 1000);
+}
 
 function onCardsClick({ target, currentTarget }) {
   if (target === currentTarget) return;
@@ -32,8 +49,10 @@ function onCardsClick({ target, currentTarget }) {
 
     if (checkWin(refs.cards)) {
       setTimeout(() => {
-        alert('You WIN');
-        renderCards(CARDS_AMOUNT);
+        refs.cards.innerHTML = `<h1>You WIN</h1>
+        <p>Time: ${refs.gameTimeField.textContent}</p>`;
+        clearInterval(timerSetIntervatID);
+        timer.stop();
       }, 500);
     }
     return;

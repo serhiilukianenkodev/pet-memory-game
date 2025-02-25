@@ -1,9 +1,11 @@
 .cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
   width: 250px;
-  /* height: 300px; */
+  min-height: 250px;
   background-color: #2ef775;
   padding: 20px;
   margin: 50px auto;
