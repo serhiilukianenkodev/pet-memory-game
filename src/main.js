@@ -9,6 +9,7 @@ let secondOpenedCard = null;
 const CARDS_AMOUNT = 16;
 const timer = new Timer();
 let timerSetIntervatID = null;
+let stepsAmount = 0;
 
 refs.cards.addEventListener('click', onCardsClick);
 refs.startBtn.addEventListener('click', onStartBtnClick);
@@ -33,6 +34,8 @@ function onCardsClick({ target, currentTarget }) {
   if (target === firstOpenedCard) return;
   if (target.classList.contains('found')) return;
 
+  stepsAmount += 1;
+  refs.stepsField.textContent = stepsAmount;
   showCard(target);
 
   if (!firstOpenedCard) {
@@ -48,12 +51,29 @@ function onCardsClick({ target, currentTarget }) {
     secondOpenedCard = null;
 
     if (checkWin(refs.cards)) {
-      setTimeout(() => {
-        refs.cards.innerHTML = `<h1>You WIN</h1>
-        <p>Time: ${refs.gameTimeField.textContent}</p>`;
-        clearInterval(timerSetIntervatID);
-        timer.stop();
-      }, 500);
+      refs.cards.innerHTML = `<div>
+        <h1>You WIN</h1>
+        <p>Time: ${refs.gameTimeField.textContent}</p>
+        <p>Steps: ${stepsAmount}</p>
+        </div`;
+      clearInterval(timerSetIntervatID);
+      timer.stop();
+      refs.gameTimeField.textContent = '00:00';
+      stepsAmount = 0;
+      refs.stepsField.textContent = stepsAmount;
+
+      // setTimeout(() => {
+      //   refs.cards.innerHTML = `<div>
+      //   <h1>You WIN</h1>
+      //   <p>Time: ${refs.gameTimeField.textContent}</p>
+      //   <p>Steps: ${stepsAmount}</p>
+      //   </div`;
+      //   clearInterval(timerSetIntervatID);
+      //   timer.stop();
+      //   refs.gameTimeField.textContent = '00:00';
+      //   stepsAmount = 0;
+      //   refs.stepsField.textContent = stepsAmount;
+      // }, 500);
     }
     return;
   }
