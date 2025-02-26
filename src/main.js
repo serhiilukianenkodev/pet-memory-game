@@ -19,6 +19,8 @@ function onStartBtnClick() {
   if (timerSetIntervatID) {
     clearInterval(timerSetIntervatID);
     timer.stop();
+    stepsAmount = 0;
+    refs.stepsField.textContent = stepsAmount;
   }
   timer.start();
   timerSetIntervatID = setInterval(() => {
